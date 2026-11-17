@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avenida Burguer | Sabor de verdade — Hambúrgueres artesanais</title>
+  <meta name="description" content="Cardápio da Avenida Burguer: hambúrgueres artesanais, hot dogs, porções e bebidas. Monte seu pedido e envie direto para o WhatsApp.">
+  <meta name="theme-color" content="#f26a1b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Avenida Burguer — Sabor de verdade">
+  <meta property="og:description" content="Monte seu pedido e envie direto para o WhatsApp da Avenida Burguer.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#menu">Ir para o cardápio</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Avenida Burguer — início">
+        <img src="assets/logo.png" alt="" width="48" height="48" class="brand-logo" onerror="this.remove()">
+        <span class="brand-name">Avenida <strong>Burguer</strong></span>
+      </a>
+
+      <nav id="main-nav" class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#menu">Cardápio</a></li>
+          <li><a href="#como-pedir">Como pedir</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="cart-btn" id="open-cart" aria-label="Abrir pedido. Itens: 0">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3 2v2h2l3.6 7.6-1.4 2.4A2 2 0 0 0 9 17h11v-2H9.4l1.1-2h7.5a2 2 0 0 0 1.8-1l3.6-6.5A1 1 0 0 0 22.5 4H6.2l-.9-2H3Z"/></svg>
+          <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+        </button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Sabor de verdade</p>
+          <h1 id="hero-title">Avenida <span>Burguer</span></h1>
+          <p class="hero-sub">Hambúrgueres artesanais, hot dogs, porções e bebidas. Escolha seus itens e envie o pedido pronto para o nosso WhatsApp.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#menu">Fazer pedido</a>
+            <a class="btn btn-ghost" href="#como-pedir">Como funciona</a>
+          </div>
+          <p class="hero-note">Qualidade · Ingredientes selecionados · Feito com carinho</p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-circle">
+            <img src="assets/logo.png" alt="" width="360" height="360" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'hero-fallback',textContent:'🍔'}))">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section" aria-labelledby="menu-title">
+      <div class="container">
+        <h2 id="menu-title" class="section-title">Cardápio</h2>
+        <p class="section-lead">Imagens meramente ilustrativas. Sujeito à disponibilidade em estoque.</p>
+        <div class="tabs" role="tablist" aria-label="Categorias do cardápio" id="tabs"></div>
+        <div id="menu-panel" class="menu-grid" role="tabpanel" tabindex="0"></div>
+      </div>
+    </section>
+
+    <section id="como-pedir" class="section section-alt" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="section-title">Como pedir</h2>
+        <ol class="steps">
+          <li><strong>Escolha</strong><span>Adicione os itens do cardápio ao pedido.</span></li>
+          <li><strong>Revise</strong><span>Ajuste quantidades e informe entrega ou retirada.</span></li>
+          <li><strong>Envie</strong><span>Abrimos o WhatsApp com a mensagem pronta para a hamburgueria.</span></li>
+          <li><strong>Confirme</strong><span>A hamburgueria confirma valores, taxa de entrega e pagamento pela conversa.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contato" class="section" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div>
+          <h2 id="contact-title" class="section-title">Contato</h2>
+          <ul class="contact-list">
+            <li><strong>WhatsApp / Telefone:</strong> <a href="https://wa.me/5514997446463">(14) 99744-6463</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/avenidaburguergbe/" rel="noopener" target="_blank">@avenidaburguergbe</a></li>
+            <li><strong>Horário de atendimento:</strong> <span class="pending">[PENDENTE — confirmar horários de todos os dias]</span></li>
+            <li><strong>Endereço:</strong> <span class="pending">[PENDENTE — informar endereço do estabelecimento]</span></li>
+          </ul>
+        </div>
+        <div class="contact-card">
+          <p>Delivery e retirada</p>
+          <a class="btn btn-primary" href="https://wa.me/5514997446463" rel="noopener" target="_blank">Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Avenida <strong>Burguer</strong></p>
+      <p>Razão social / CNPJ: <span class="pending">[PENDENTE]</span></p>
+      <nav aria-label="Informações legais">
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Serviço</a>
+      </nav>
+      <p class="small">© <span id="year"></span> Avenida Burguer. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Drawer do pedido -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer-head">
+      <h2 id="drawer-title">Seu pedido</h2>
+      <button type="button" class="icon-btn" id="close-cart" aria-label="Fechar pedido">✕</button>
+    </div>
+    <div class="drawer-body">
+      <p id="cart-empty" class="empty">Seu pedido está vazio. Escolha itens no cardápio.</p>
+      <ul id="cart-list" class="cart-list"></ul>
+      <div class="total-row" id="total-row" hidden><span>Subtotal</span><strong id="cart-total">R$ 0,00</strong></div>
+      <p class="small" id="total-note" hidden>Taxa de entrega (se houver) e valores finais são confirmados pela hamburgueria no WhatsApp.</p>
+
+      <form id="order-form" novalidate hidden>
+        <div class="field">
+          <label for="f-name">Seu nome</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" maxlength="60" required aria-describedby="e-name">
+          <p class="error" id="e-name" role="alert"></p>
+        </div>
+
+        <fieldset class="field">
+          <legend>Como deseja receber?</legend>
+          <label class="radio"><input type="radio" name="mode" value="Entrega" checked> Entrega</label>
+          <label class="radio"><input type="radio" name="mode" value="Retirada"> Retirada no local</label>
+        </fieldset>
+
+        <div class="field" id="address-field">
+          <label for="f-address">Endereço de entrega</label>
+          <input id="f-address" name="address" type="text" autocomplete="street-address" maxlength="160" aria-describedby="e-address">
+          <p class="error" id="e-address" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="f-pay">Forma de pagamento (a combinar no WhatsApp)</label>
+          <select id="f-pay" name="pay">
+            <option>Pix</option>
+            <option>Dinheiro</option>
+            <option>Cartão</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="f-notes">Observações (opcional)</label>
+          <textarea id="f-notes" name="notes" rows="3" maxlength="300" placeholder="Ex.: sem cebola, rúcula no lugar de alface..."></textarea>
+        </div>
+
+        <p class="small">Ao enviar, o WhatsApp será aberto com sua mensagem. Nome e endereço só são usados para montar essa mensagem e <strong>não são salvos</strong> por este site. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p>
+
+        <button type="submit" class="btn btn-whats">Enviar pedido pelo WhatsApp</button>
+        <button type="button" class="btn btn-link" id="clear-cart">Limpar pedido</button>
+      </form>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
